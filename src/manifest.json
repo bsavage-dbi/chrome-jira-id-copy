@@ -1,0 +1,21 @@
+{
+  "manifest_version": 2,
+  "name": "JIRA Task ID Copier",
+  "description": "This extension gets a JIRA task ID from the URL and copies it to your clipboard",
+  "version": "1.0",
+  "background": {
+    "scripts": ["main.js"],
+    "persistent": false
+  },
+  "page_action": {
+    "default_icon": "task_icon.png"
+  },
+  "permissions": [
+    "activeTab",
+    "clipboardWrite",
+    "clipboardRead",
+    "notifications",
+    "tabs",
+    "https://*.atlassian.net/"
+  ]
+}
